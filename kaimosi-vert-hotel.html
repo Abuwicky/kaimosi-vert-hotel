@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaimosi Vert Hotel | Luxury Forest Retreat – Shamakhokho, Vihiga</title>
+<meta name="description" content="Escape to Kaimosi Vert Hotel – a luxury nature retreat near Kaimosi Forest, Shamakhokho, Vihiga. Book your serene getaway in Western Kenya today.">
+<meta name="keywords" content="Hotel in Vihiga, Shamakhokho hotel, Kaimosi accommodation, Western Kenya hotel, luxury retreat Kenya, Kaimosi Forest hotel">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --forest: #0B3D2E;
+    --forest-mid: #154d3a;
+    --forest-light: #1e6b50;
+    --gold: #C8A96A;
+    --gold-light: #dfc08a;
+    --cream: #F7F3EC;
+    --cream-dark: #EDE5D8;
+    --charcoal: #1a1a1a;
+    --text-body: #3a3530;
+    --white: #ffffff;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--text-body);
+    overflow-x: hidden;
+  }
+
+  /* ─── TYPOGRAPHY ─── */
+  h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
+
+  .serif-italic { font-style: italic; font-family: 'Cormorant Garamond', serif; }
+
+  /* ─── NAV ─── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    padding: 1.2rem 3rem;
+    display: flex; align-items: center; justify-content: space-between;
+    transition: background 0.4s, padding 0.3s;
+  }
+  nav.scrolled {
+    background: rgba(11,61,46,0.97);
+    backdrop-filter: blur(12px);
+    padding: 0.9rem 3rem;
+    box-shadow: 0 2px 30px rgba(0,0,0,0.2);
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 0.75rem; text-decoration: none;
+  }
+  .nav-logo-icon {
+    width: 42px; height: 42px;
+    background: var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem; color: var(--forest); font-weight: 600;
+    letter-spacing: -0.5px;
+  }
+  .nav-logo-text { color: var(--white); }
+  .nav-logo-text strong { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 600; letter-spacing: 1px; }
+  .nav-logo-text span { font-size: 0.65rem; letter-spacing: 3px; color: var(--gold); text-transform: uppercase; }
+  .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+  .nav-links a { color: rgba(255,255,255,0.85); text-decoration: none; font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase; transition: color 0.2s; }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-cta {
+    background: var(--gold); color: var(--forest);
+    padding: 0.65rem 1.8rem; font-size: 0.78rem; letter-spacing: 2px;
+    text-transform: uppercase; font-weight: 500; text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+  }
+  .nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); }
+  .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+  .hamburger span { width: 25px; height: 2px; background: white; display: block; transition: 0.3s; }
+
+  /* ─── HERO ─── */
+  #hero {
+    min-height: 100vh;
+    background:
+      linear-gradient(to bottom, rgba(11,61,46,0.55) 0%, rgba(11,61,46,0.3) 40%, rgba(0,0,0,0.6) 100%),
+      url('https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1920&q=80') center/cover no-repeat;
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; padding: 8rem 2rem 4rem;
+    position: relative; overflow: hidden;
+  }
+  #hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 50% 80%, rgba(11,61,46,0.4) 0%, transparent 70%);
+  }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    background: rgba(200,169,106,0.2); border: 1px solid rgba(200,169,106,0.4);
+    backdrop-filter: blur(8px);
+    padding: 0.4rem 1.2rem; border-radius: 50px;
+    color: var(--gold); font-size: 0.72rem; letter-spacing: 3px; text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    animation: fadeUp 0.8s ease both;
+  }
+  .hero-badge::before { content: '✦'; }
+  #hero h1 {
+    font-size: clamp(2.8rem, 7vw, 6rem);
+    color: var(--white); line-height: 1.05;
+    font-weight: 300; letter-spacing: -1px;
+    max-width: 900px;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+  #hero h1 em { color: var(--gold); font-style: italic; }
+  .hero-sub {
+    color: rgba(255,255,255,0.78); font-size: 1.05rem; font-weight: 300;
+    max-width: 520px; line-height: 1.7; margin-top: 1.2rem;
+    animation: fadeUp 0.8s 0.4s ease both;
+  }
+  .hero-ctas {
+    display: flex; gap: 1rem; margin-top: 2.5rem; flex-wrap: wrap; justify-content: center;
+    animation: fadeUp 0.8s 0.6s ease both;
+  }
+  .btn-primary {
+    background: var(--gold); color: var(--forest);
+    padding: 1rem 2.5rem; font-size: 0.8rem; letter-spacing: 2px;
+    text-transform: uppercase; font-weight: 500; text-decoration: none;
+    transition: all 0.25s; display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 8px 30px rgba(200,169,106,0.4); }
+  .btn-outline {
+    border: 1px solid rgba(255,255,255,0.5); color: var(--white);
+    padding: 1rem 2.5rem; font-size: 0.8rem; letter-spacing: 2px;
+    text-transform: uppercase; font-weight: 400; text-decoration: none;
+    transition: all 0.25s; display: inline-block; backdrop-filter: blur(4px);
+  }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+  .hero-trust {
+    position: absolute; bottom: 3rem; left: 50%; transform: translateX(-50%);
+    display: flex; gap: 3rem; align-items: center;
+    animation: fadeUp 0.8s 0.8s ease both;
+    flex-wrap: wrap; justify-content: center;
+  }
+  .trust-item { text-align: center; color: white; }
+  .trust-item .big { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: var(--gold); line-height: 1; }
+  .trust-item .small { font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.7; margin-top: 0.2rem; }
+  .trust-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.2); }
+
+  /* ─── QUICK HIGHLIGHTS ─── */
+  #highlights {
+    background: var(--forest);
+    padding: 1.5rem 3rem;
+    display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap;
+  }
+  .highlight-item {
+    display: flex; align-items: center; gap: 0.75rem; color: rgba(255,255,255,0.8);
+    font-size: 0.78rem; letter-spacing: 1.5px; text-transform: uppercase;
+  }
+  .highlight-item .icon { font-size: 1.2rem; }
+  .highlight-item span { color: var(--gold); }
+
+  /* ─── SECTION SHARED ─── */
+  section { padding: 6rem 2rem; }
+  .section-eyebrow {
+    font-size: 0.68rem; letter-spacing: 4px; text-transform: uppercase;
+    color: var(--gold); margin-bottom: 0.8rem; display: block;
+  }
+  .section-title {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 300; line-height: 1.15; color: var(--forest);
+  }
+  .section-title em { color: var(--gold); }
+  .section-line {
+    width: 50px; height: 1px; background: var(--gold);
+    margin: 1.5rem 0;
+  }
+  .container { max-width: 1280px; margin: 0 auto; }
+
+  /* ─── BOOKING FORM ─── */
+  #booking-bar {
+    background: var(--forest);
+    padding: 2.5rem 3rem;
+  }
+  .booking-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: grid; grid-template-columns: repeat(4, 1fr) auto;
+    gap: 1px; background: rgba(255,255,255,0.1);
+  }
+  .booking-field {
+    background: rgba(255,255,255,0.06);
+    padding: 1.2rem 1.5rem;
+    display: flex; flex-direction: column; gap: 0.25rem;
+  }
+  .booking-field label {
+    font-size: 0.6rem; letter-spacing: 3px; text-transform: uppercase;
+    color: var(--gold); font-weight: 500;
+  }
+  .booking-field input, .booking-field select {
+    background: none; border: none; outline: none;
+    color: var(--white); font-family: 'Jost', sans-serif;
+    font-size: 0.9rem; font-weight: 300;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+  .booking-field input::placeholder { color: rgba(255,255,255,0.5); }
+  .booking-field select option { background: var(--forest); color: white; }
+  .booking-submit {
+    background: var(--gold); border: none; cursor: pointer;
+    padding: 0 2.5rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem; letter-spacing: 2.5px; text-transform: uppercase;
+    color: var(--forest); font-weight: 500;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  .booking-submit:hover { background: var(--gold-light); }
+  .booking-urgency {
+    text-align: center; margin-top: 1rem; max-width: 1100px; margin: 1rem auto 0;
+    color: rgba(255,255,255,0.5); font-size: 0.72rem; letter-spacing: 1px;
+  }
+  .booking-urgency span { color: var(--gold-light); }
+
+  /* ─── ABOUT / EXPERIENCE ─── */
+  #about { background: var(--cream); }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 5rem; align-items: center; max-width: 1200px; margin: 0 auto;
+  }
+  .about-images {
+    position: relative; height: 520px;
+  }
+  .about-img-main {
+    position: absolute; top: 0; left: 0; right: 60px; bottom: 60px;
+    background: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=900&q=80') center/cover;
+    box-shadow: 0 20px 60px rgba(11,61,46,0.2);
+  }
+  .about-img-accent {
+    position: absolute; right: 0; bottom: 0; width: 55%; height: 55%;
+    background: url('https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=600&q=80') center/cover;
+    border: 6px solid var(--cream);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  }
+  .about-badge {
+    position: absolute; top: 1.5rem; right: 4rem;
+    background: var(--forest); color: var(--white);
+    padding: 1rem 1.5rem; text-align: center;
+  }
+  .about-badge .num { font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; color: var(--gold); line-height: 1; }
+  .about-badge .label { font-size: 0.6rem; letter-spacing: 2px; text-transform: uppercase; opacity: 0.7; margin-top: 0.2rem; }
+  .about-text p { line-height: 1.9; color: #5a5248; font-weight: 300; margin-bottom: 1.2rem; font-size: 0.95rem; }
+  .about-pillars { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 2rem; }
+  .about-pillar {
+    padding: 1.2rem; border-left: 2px solid var(--gold);
+    background: rgba(200,169,106,0.06);
+  }
+  .about-pillar .p-icon { font-size: 1.4rem; margin-bottom: 0.4rem; }
+  .about-pillar h4 { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--forest); margin-bottom: 0.3rem; }
+  .about-pillar p { font-size: 0.8rem; color: #7a7068; line-height: 1.5; margin: 0; }
+
+  /* ─── ROOMS ─── */
+  #rooms { background: var(--forest); padding: 6rem 2rem; }
+  #rooms .section-title { color: var(--white); }
+  #rooms .section-eyebrow { color: var(--gold); }
+  #rooms .section-line { background: var(--gold); }
+  .rooms-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 2px; margin-top: 3rem; max-width: 1200px; margin: 3rem auto 0;
+  }
+  .room-card { position: relative; overflow: hidden; cursor: pointer; }
+  .room-card-img {
+    height: 380px;
+    background-size: cover; background-position: center;
+    transition: transform 0.6s ease;
+  }
+  .room-card:hover .room-card-img { transform: scale(1.05); }
+  .room-card-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%);
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 2rem;
+    transition: background 0.3s;
+  }
+  .room-card:hover .room-card-overlay { background: linear-gradient(to top, rgba(11,61,46,0.9) 0%, rgba(11,61,46,0.3) 100%); }
+  .room-type { font-size: 0.6rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+  .room-name { font-family: 'Cormorant Garamond', serif; font-size: 1.7rem; color: var(--white); margin-bottom: 0.5rem; font-weight: 300; }
+  .room-amenities { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .room-amenity { font-size: 0.68rem; color: rgba(255,255,255,0.6); }
+  .room-cta {
+    display: inline-block; padding: 0.6rem 1.5rem;
+    background: var(--gold); color: var(--forest);
+    font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase;
+    text-decoration: none; font-weight: 500;
+    opacity: 0; transform: translateY(10px);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  .room-card:hover .room-cta { opacity: 1; transform: translateY(0); }
+  .room-card.featured { grid-column: span 2; }
+  .room-card.featured .room-card-img { height: 380px; }
+  .room-card.featured .room-name { font-size: 2.2rem; }
+
+  /* ─── DINING ─── */
+  #dining { background: var(--cream-dark); }
+  .dining-grid {
+    display: grid; grid-template-columns: 5fr 4fr;
+    gap: 5rem; align-items: center; max-width: 1200px; margin: 0 auto;
+  }
+  .dining-images {
+    display: grid; grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px; gap: 1rem;
+  }
+  .dining-img {
+    background-size: cover; background-position: center;
+    overflow: hidden;
+  }
+  .dining-img:first-child { grid-row: span 2; }
+  .dining-text .section-line { margin: 1.2rem 0; }
+  .dining-text p { font-weight: 300; line-height: 1.9; color: #5a5248; font-size: 0.95rem; margin-bottom: 1rem; }
+  .dining-features { list-style: none; margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.8rem; }
+  .dining-features li {
+    display: flex; align-items: center; gap: 0.8rem;
+    font-size: 0.85rem; color: var(--text-body);
+  }
+  .dining-features li::before { content: '✦'; color: var(--gold); font-size: 0.6rem; }
+
+  /* ─── REVIEWS ─── */
+  #reviews { background: var(--white); }
+  .reviews-header { text-align: center; margin-bottom: 4rem; }
+  .reviews-header .section-line { margin: 1.2rem auto; }
+  .overall-rating {
+    display: flex; align-items: center; justify-content: center; gap: 1rem; margin-top: 1rem;
+  }
+  .rating-big { font-family: 'Cormorant Garamond', serif; font-size: 4rem; color: var(--forest); line-height: 1; }
+  .rating-stars { color: var(--gold); font-size: 1.3rem; margin-bottom: 0.3rem; }
+  .rating-label { font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: #999; }
+  .reviews-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 2rem; max-width: 1100px; margin: 0 auto;
+  }
+  .review-card {
+    padding: 2.5rem; background: var(--cream);
+    border-top: 3px solid var(--gold);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .review-card:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,0.08); }
+  .review-stars { color: var(--gold); font-size: 0.85rem; margin-bottom: 1rem; }
+  .review-text {
+    font-family: 'Cormorant Garamond', serif; font-size: 1.15rem;
+    font-style: italic; line-height: 1.7; color: var(--forest);
+    margin-bottom: 1.5rem;
+  }
+  .review-author { font-size: 0.75rem; letter-spacing: 1.5px; text-transform: uppercase; color: #999; }
+  .review-author strong { color: var(--text-body); display: block; margin-bottom: 0.2rem; font-weight: 500; }
+
+  /* ─── CTA BANNER ─── */
+  #cta-banner {
+    background:
+      linear-gradient(rgba(11,61,46,0.88), rgba(11,61,46,0.88)),
+      url('https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=1920&q=80') center/cover fixed;
+    padding: 7rem 2rem; text-align: center;
+  }
+  #cta-banner .section-eyebrow { color: var(--gold); }
+  #cta-banner h2 { color: var(--white); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 300; margin-bottom: 1rem; }
+  #cta-banner p { color: rgba(255,255,255,0.7); font-weight: 300; font-size: 1rem; max-width: 500px; margin: 0 auto 2.5rem; line-height: 1.8; }
+  .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+  /* ─── CONTACT ─── */
+  #contact { background: var(--cream); }
+  .contact-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 4rem; align-items: start; max-width: 1100px; margin: 0 auto;
+  }
+  .contact-info .section-title { font-size: 2.2rem; }
+  .contact-info p { font-weight: 300; line-height: 1.9; color: #5a5248; font-size: 0.95rem; margin: 1rem 0 2rem; }
+  .contact-details { display: flex; flex-direction: column; gap: 1.2rem; }
+  .contact-detail {
+    display: flex; align-items: flex-start; gap: 1rem;
+    padding: 1.2rem; background: white;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  }
+  .contact-detail .c-icon {
+    width: 40px; height: 40px; background: var(--forest);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--gold); font-size: 1rem; flex-shrink: 0;
+  }
+  .contact-detail .c-text label { font-size: 0.6rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); display: block; margin-bottom: 0.3rem; }
+  .contact-detail .c-text a, .contact-detail .c-text span { color: var(--forest); font-weight: 400; font-size: 0.9rem; text-decoration: none; }
+  .contact-detail .c-text a:hover { color: var(--gold); }
+  .contact-actions { display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap; }
+  .btn-forest {
+    background: var(--forest); color: var(--white);
+    padding: 0.85rem 1.8rem; font-size: 0.75rem; letter-spacing: 2px;
+    text-transform: uppercase; text-decoration: none; font-weight: 400;
+    transition: background 0.2s; display: inline-block;
+  }
+  .btn-forest:hover { background: var(--forest-light); }
+  .map-container {
+    border: 3px solid var(--gold);
+    overflow: hidden; height: 420px;
+  }
+  .map-container iframe { width: 100%; height: 100%; border: none; }
+  .social-links { display: flex; gap: 1rem; margin-top: 2rem; }
+  .social-link {
+    width: 40px; height: 40px; border: 1px solid var(--cream-dark);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--forest); text-decoration: none; font-size: 1rem;
+    transition: all 0.2s;
+  }
+  .social-link:hover { background: var(--forest); color: var(--gold); border-color: var(--forest); }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--charcoal); padding: 3rem 2rem 1.5rem;
+  }
+  .footer-inner {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 3rem; padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .footer-brand p { font-size: 0.85rem; color: rgba(255,255,255,0.4); line-height: 1.8; margin-top: 1rem; font-weight: 300; }
+  .footer-col h5 { font-size: 0.65rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+  .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+  .footer-col ul a { color: rgba(255,255,255,0.45); font-size: 0.82rem; text-decoration: none; transition: color 0.2s; font-weight: 300; }
+  .footer-col ul a:hover { color: var(--gold); }
+  .footer-bottom {
+    max-width: 1200px; margin: 1.5rem auto 0;
+    display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+  }
+  .footer-bottom p { font-size: 0.72rem; color: rgba(255,255,255,0.25); }
+
+  /* ─── WHATSAPP FLOAT ─── */
+  .whatsapp-float {
+    position: fixed; bottom: 2rem; right: 2rem; z-index: 200;
+    width: 56px; height: 56px; border-radius: 50%;
+    background: #25D366; color: white;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.6rem; text-decoration: none;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    animation: pulse 2s infinite;
+  }
+  .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 25px rgba(37,211,102,0.6); animation: none; }
+
+  /* ─── STICKY BOOK ─── */
+  .sticky-book {
+    position: fixed; bottom: 2rem; left: 2rem; z-index: 200;
+    display: none;
+  }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes pulse {
+    0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+    50% { box-shadow: 0 4px 30px rgba(37,211,102,0.7); }
+  }
+
+  .fade-in {
+    opacity: 0; transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  /* ─── SCROLL CUE ─── */
+  .scroll-cue {
+    position: absolute; bottom: 8rem; left: 50%; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
+    color: rgba(255,255,255,0.5); font-size: 0.6rem; letter-spacing: 3px; text-transform: uppercase;
+    animation: fadeUp 1s 1.2s ease both;
+  }
+  .scroll-cue .line { width: 1px; height: 40px; background: rgba(255,255,255,0.3); animation: lineDown 1.5s infinite; }
+  @keyframes lineDown {
+    0% { transform: scaleY(0); transform-origin: top; }
+    50% { transform: scaleY(1); transform-origin: top; }
+    51% { transform: scaleY(1); transform-origin: bottom; }
+    100% { transform: scaleY(0); transform-origin: bottom; }
+  }
+
+  /* ─── MODAL ─── */
+  .modal-overlay {
+    display: none; position: fixed; inset: 0; z-index: 500;
+    background: rgba(0,0,0,0.7); backdrop-filter: blur(4px);
+    align-items: center; justify-content: center;
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: var(--forest); width: 90%; max-width: 540px;
+    padding: 3rem; position: relative;
+  }
+  .modal-close {
+    position: absolute; top: 1rem; right: 1.5rem;
+    background: none; border: none; color: rgba(255,255,255,0.5);
+    font-size: 1.5rem; cursor: pointer; line-height: 1;
+  }
+  .modal h3 { font-family: 'Cormorant Garamond', serif; font-size: 2rem; color: white; margin-bottom: 0.5rem; }
+  .modal p { color: rgba(255,255,255,0.5); font-size: 0.85rem; margin-bottom: 2rem; }
+  .modal-form { display: flex; flex-direction: column; gap: 1rem; }
+  .modal-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .modal-field { display: flex; flex-direction: column; gap: 0.4rem; }
+  .modal-field label { font-size: 0.62rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); }
+  .modal-field input, .modal-field select {
+    background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.1);
+    padding: 0.75rem 1rem; color: white; font-family: 'Jost', sans-serif;
+    font-size: 0.9rem; outline: none;
+    transition: border-color 0.2s;
+  }
+  .modal-field input:focus, .modal-field select:focus { border-color: var(--gold); }
+  .modal-field select option { background: var(--forest); }
+  .modal-submit {
+    background: var(--gold); color: var(--forest); border: none;
+    padding: 1rem; font-family: 'Jost', sans-serif;
+    font-size: 0.78rem; letter-spacing: 2.5px; text-transform: uppercase;
+    font-weight: 500; cursor: pointer; margin-top: 0.5rem;
+    transition: background 0.2s;
+  }
+  .modal-submit:hover { background: var(--gold-light); }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    nav { padding: 1.2rem 1.5rem; }
+    nav.scrolled { padding: 0.9rem 1.5rem; }
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    .mobile-menu {
+      display: none; position: fixed; top: 70px; left: 0; right: 0;
+      background: var(--forest); padding: 2rem;
+      flex-direction: column; gap: 1.5rem; z-index: 99;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      color: rgba(255,255,255,0.8); text-decoration: none;
+      font-size: 1rem; letter-spacing: 2px; text-transform: uppercase;
+    }
+    .mobile-menu .btn-primary { text-align: center; }
+    .about-grid, .dining-grid, .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .rooms-grid { grid-template-columns: 1fr; }
+    .room-card.featured { grid-column: span 1; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .booking-inner { grid-template-columns: 1fr 1fr; }
+    .booking-submit { grid-column: span 2; padding: 1rem; }
+    .hero-trust { gap: 1.5rem; bottom: 2rem; }
+    .trust-divider { display: none; }
+    #highlights { gap: 2rem; padding: 1.5rem; }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .about-images { height: 350px; }
+    .modal-row { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    section { padding: 4rem 1.5rem; }
+    #booking-bar { padding: 2rem 1.5rem; }
+    .booking-inner { grid-template-columns: 1fr; }
+    .booking-submit { grid-column: span 1; }
+    .footer-inner { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+    <div class="nav-logo-icon">KV</div>
+    <div class="nav-logo-text">
+      <strong>Kaimosi Vert</strong>
+      <span>Hotel & Retreat</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#rooms">Rooms</a></li>
+    <li><a href="#about">Experience</a></li>
+    <li><a href="#dining">Dining</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#" class="nav-cta" onclick="openModal()">Book Now</a>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#rooms" onclick="toggleMenu()">Rooms</a>
+  <a href="#about" onclick="toggleMenu()">Experience</a>
+  <a href="#dining" onclick="toggleMenu()">Dining</a>
+  <a href="#reviews" onclick="toggleMenu()">Reviews</a>
+  <a href="#contact" onclick="toggleMenu()">Contact</a>
+  <a href="#" class="btn-primary" onclick="openModal(); toggleMenu()">Book Now</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-badge">Vihiga County, Western Kenya</div>
+  <h1>Escape to <em>Serenity</em><br>at Kaimosi Vert Hotel</h1>
+  <p class="hero-sub">Where the ancient Kaimosi Forest meets uncompromising luxury. Reconnect with nature, rediscover peace.</p>
+  <div class="hero-ctas">
+    <a href="#" class="btn-primary" onclick="openModal()">Book Your Stay</a>
+    <a href="#rooms" class="btn-outline">Explore Rooms</a>
+  </div>
+  <div class="hero-trust">
+    <div class="trust-item">
+      <div class="big">4.4</div>
+      <div class="rating-stars">★★★★½</div>
+      <div class="small">Guest Rating</div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="big">500+</div>
+      <div class="small">Happy Guests</div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="big">100%</div>
+      <div class="small">Loved by Guests</div>
+    </div>
+    <div class="trust-divider"></div>
+    <div class="trust-item">
+      <div class="big">24/7</div>
+      <div class="small">Concierge Service</div>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <div class="line"></div>
+    <span>Discover</span>
+  </div>
+</section>
+
+<!-- HIGHLIGHTS BAR -->
+<div id="highlights">
+  <div class="highlight-item"><span class="icon">🌿</span> <span>Kaimosi Forest</span> Reserve Views</div>
+  <div class="highlight-item"><span class="icon">🍽️</span> <span>Generous</span> Meal Portions</div>
+  <div class="highlight-item"><span class="icon">⭐</span> <span>Exceptional</span> Service</div>
+  <div class="highlight-item"><span class="icon">📶</span> <span>High-Speed</span> WiFi</div>
+  <div class="highlight-item"><span class="icon">🚗</span> <span>Free</span> Parking</div>
+</div>
+
+<!-- BOOKING BAR -->
+<div id="booking-bar">
+  <div class="booking-inner">
+    <div class="booking-field">
+      <label>Check-In</label>
+      <input type="date" id="checkin">
+    </div>
+    <div class="booking-field">
+      <label>Check-Out</label>
+      <input type="date" id="checkout">
+    </div>
+    <div class="booking-field">
+      <label>Guests</label>
+      <select>
+        <option>1 Guest</option>
+        <option>2 Guests</option>
+        <option>3 Guests</option>
+        <option>4+ Guests</option>
+      </select>
+    </div>
+    <div class="booking-field">
+      <label>Room Type</label>
+      <select>
+        <option>Any Room</option>
+        <option>Forest View Room</option>
+        <option>Deluxe Suite</option>
+        <option>Executive Room</option>
+        <option>Family Room</option>
+      </select>
+    </div>
+    <button class="booking-submit" onclick="handleBooking()">Check Availability</button>
+  </div>
+  <div class="booking-urgency">⚡ <span>Only 3 rooms left this weekend</span> — Don't miss out on your retreat</div>
+</div>
+
+<!-- ABOUT / EXPERIENCE -->
+<section id="about">
+  <div class="about-grid fade-in">
+    <div class="about-images">
+      <div class="about-img-main"></div>
+      <div class="about-img-accent"></div>
+      <div class="about-badge">
+        <div class="num">∞</div>
+        <div class="label">Moments of<br>Tranquility</div>
+      </div>
+    </div>
+    <div class="about-text">
+      <span class="section-eyebrow">Our Story</span>
+      <h2 class="section-title">Where Luxury Meets<br>the <em>Heart of Nature</em></h2>
+      <div class="section-line"></div>
+      <p>Nestled near the ancient Kaimosi Forest in Shamakhokho, Vihiga County, Kaimosi Vert Hotel is Western Kenya's finest nature retreat. We offer an authentic escape where the call of the forest blends seamlessly with the warmth of genuine African hospitality.</p>
+      <p>Every room, every meal, and every interaction is crafted to leave you refreshed, restored, and deeply at peace. Whether you're seeking a romantic escape, a business retreat, or a family adventure — this is your sanctuary.</p>
+      <div class="about-pillars">
+        <div class="about-pillar">
+          <div class="p-icon">🌲</div>
+          <h4>Forest Setting</h4>
+          <p>Surrounded by lush greenery and the sounds of nature</p>
+        </div>
+        <div class="about-pillar">
+          <div class="p-icon">🛎️</div>
+          <h4>Personal Service</h4>
+          <p>Attentive staff who treat you like family</p>
+        </div>
+        <div class="about-pillar">
+          <div class="p-icon">🏡</div>
+          <h4>Home Away</h4>
+          <p>Warm, comfortable spaces that feel truly yours</p>
+        </div>
+        <div class="about-pillar">
+          <div class="p-icon">✨</div>
+          <h4>Local Culture</h4>
+          <p>Immersed in the rich heritage of Western Kenya</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS -->
+<section id="rooms">
+  <div class="container">
+    <span class="section-eyebrow">Accommodation</span>
+    <h2 class="section-title">Rooms Designed for <em>Deep Rest</em></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="rooms-grid fade-in">
+    <div class="room-card featured">
+      <div class="room-card-img" style="background-image: url('https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=1200&q=80')"></div>
+      <div class="room-card-overlay">
+        <div class="room-type">Signature Suite</div>
+        <div class="room-name">Forest View Suite</div>
+        <div class="room-amenities">
+          <span class="room-amenity">📶 WiFi</span>
+          <span class="room-amenity">📺 Smart TV</span>
+          <span class="room-amenity">🚿 Hot Shower</span>
+          <span class="room-amenity">❄️ AC</span>
+          <span class="room-amenity">🌲 Forest View</span>
+        </div>
+        <a href="#" class="room-cta" onclick="openModal()">Reserve Now</a>
+      </div>
+    </div>
+    <div class="room-card">
+      <div class="room-card-img" style="background-image: url('https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80')"></div>
+      <div class="room-card-overlay">
+        <div class="room-type">Standard</div>
+        <div class="room-name">Deluxe Room</div>
+        <div class="room-amenities">
+          <span class="room-amenity">📶 WiFi</span>
+          <span class="room-amenity">📺 TV</span>
+          <span class="room-amenity">🚿 Shower</span>
+        </div>
+        <a href="#" class="room-cta" onclick="openModal()">Reserve Now</a>
+      </div>
+    </div>
+    <div class="room-card">
+      <div class="room-card-img" style="background-image: url('https://images.unsplash.com/photo-1590490360182-c33d57733427?w=800&q=80')"></div>
+      <div class="room-card-overlay">
+        <div class="room-type">Premium</div>
+        <div class="room-name">Executive Room</div>
+        <div class="room-amenities">
+          <span class="room-amenity">📶 WiFi</span>
+          <span class="room-amenity">🖥️ Work Desk</span>
+          <span class="room-amenity">☕ Kettle</span>
+        </div>
+        <a href="#" class="room-cta" onclick="openModal()">Reserve Now</a>
+      </div>
+    </div>
+    <div class="room-card">
+      <div class="room-card-img" style="background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80')"></div>
+      <div class="room-card-overlay">
+        <div class="room-type">Family</div>
+        <div class="room-name">Family Room</div>
+        <div class="room-amenities">
+          <span class="room-amenity">👨‍👩‍👧 4 Guests</span>
+          <span class="room-amenity">📶 WiFi</span>
+          <span class="room-amenity">📺 TV</span>
+        </div>
+        <a href="#" class="room-cta" onclick="openModal()">Reserve Now</a>
+      </div>
+    </div>
+    <div class="room-card">
+      <div class="room-card-img" style="background-image: url('https://images.unsplash.com/photo-1602002418082-a4443e081dd1?w=800&q=80')"></div>
+      <div class="room-card-overlay">
+        <div class="room-type">Romantic</div>
+        <div class="room-name">Couple's Retreat</div>
+        <div class="room-amenities">
+          <span class="room-amenity">🌹 Romance Pack</span>
+          <span class="room-amenity">🛁 Bath</span>
+          <span class="room-amenity">🌄 View</span>
+        </div>
+        <a href="#" class="room-cta" onclick="openModal()">Reserve Now</a>
+      </div>
+    </div>
+  </div>
+  <div style="text-align:center; margin-top: 3rem;">
+    <a href="#" class="btn-primary" onclick="openModal()">View All Rooms & Rates</a>
+  </div>
+</section>
+
+<!-- DINING -->
+<section id="dining">
+  <div class="dining-grid fade-in container">
+    <div class="dining-images">
+      <div class="dining-img" style="background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80')"></div>
+      <div class="dining-img" style="background-image: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&q=80')"></div>
+      <div class="dining-img" style="background-image: url('https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&q=80')"></div>
+    </div>
+    <div class="dining-text">
+      <span class="section-eyebrow">Culinary Experience</span>
+      <h2 class="section-title">Flavours That<br><em>Nourish the Soul</em></h2>
+      <div class="section-line"></div>
+      <p>Our kitchen is a celebration of taste — generous portions crafted with fresh, locally sourced ingredients. From hearty Kenyan breakfasts to refined evening meals, every plate is prepared with love and intention.</p>
+      <p>Dine surrounded by greenery, breathing in the forest air as you savour cuisine that tells the story of Western Kenya.</p>
+      <ul class="dining-features">
+        <li>Generous portion sizes — always leave satisfied</li>
+        <li>Fresh local & international cuisine daily</li>
+        <li>Full breakfast included with every booking</li>
+        <li>Private dining available for special occasions</li>
+        <li>Vegetarian & dietary options available</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews">
+  <div class="reviews-header fade-in">
+    <span class="section-eyebrow">Guest Voices</span>
+    <h2 class="section-title" style="color: var(--forest);">What Our <em>Guests Say</em></h2>
+    <div class="section-line"></div>
+    <div class="overall-rating">
+      <div class="rating-big">4.4</div>
+      <div>
+        <div class="rating-stars">★★★★½</div>
+        <div class="rating-label">Based on Google Reviews</div>
+      </div>
+    </div>
+  </div>
+  <div class="reviews-grid fade-in">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Beautifully serene, calm and soothing. Waking up to the sounds of the forest was something I'll never forget. This place is a true gem in Western Kenya."</p>
+      <div class="review-author">
+        <strong>Sarah M.</strong>
+        Nairobi • Couple's Retreat
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"The meal portions were incredibly generous — we were honestly blown away. The food quality combined with the peaceful setting makes this hotel truly special."</p>
+      <div class="review-author">
+        <strong>James O.</strong>
+        Kisumu • Family Vacation
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★½</div>
+      <p class="review-text">"Friendly staff and wonderful management who go above and beyond. You feel genuinely welcomed here. Already planning my next visit to this tranquil escape."</p>
+      <div class="review-author">
+        <strong>Grace W.</strong>
+        Kakamega • Business Travel
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"A perfect retreat from the chaos of city life. The rooms are clean, well-appointed, and the forest view from my window was absolutely breathtaking every single morning."</p>
+      <div class="review-author">
+        <strong>David K.</strong>
+        Eldoret • Solo Traveller
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Luxury meets nature perfectly here. The attention to detail in every aspect of the stay — from housekeeping to the thoughtful welcome — was simply outstanding."</p>
+      <div class="review-author">
+        <strong>Amina H.</strong>
+        Mombasa • Anniversary Stay
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★½</div>
+      <p class="review-text">"Best hotel in Vihiga County, hands down. The location near Kaimosi Forest is unparalleled. An ideal base for exploring Western Kenya while enjoying five-star comfort."</p>
+      <div class="review-author">
+        <strong>Peter N.</strong>
+        Kampala • International Guest
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section id="cta-banner">
+  <span class="section-eyebrow">Your Sanctuary Awaits</span>
+  <h2>Reserve Your Stay <em>Today</em></h2>
+  <p>Limited rooms available. Begin your journey to serenity — escape the noise, reconnect with nature, feel at home away from home.</p>
+  <div class="urgency" style="color: var(--gold); font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 2rem;">
+    ⚡ Limited Availability This Weekend
+  </div>
+  <div class="cta-buttons">
+    <a href="#" class="btn-primary" onclick="openModal()">Book Now — It's Easy</a>
+    <a href="tel:+254726526802" class="btn-outline">Call Us: +254 726 526802</a>
+  </div>
+</section>
+
+<!-- CONTACT & LOCATION -->
+<section id="contact">
+  <div class="contact-grid fade-in">
+    <div class="contact-info">
+      <span class="section-eyebrow">Find Us</span>
+      <h2 class="section-title">Come Visit <em>Us</em></h2>
+      <div class="section-line"></div>
+      <p>Located in the scenic Shamakhokho area of Vihiga County, we're easily accessible from Kisumu, Kakamega, and the wider Western Kenya region. Your retreat is closer than you think.</p>
+      <div class="contact-details">
+        <div class="contact-detail">
+          <div class="c-icon">📍</div>
+          <div class="c-text">
+            <label>Location</label>
+            <span>Shamakhokho, Vihiga County, Western Kenya</span>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="c-icon">📞</div>
+          <div class="c-text">
+            <label>Phone</label>
+            <a href="tel:+254726526802">+254 726 526802</a>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="c-icon">✉️</div>
+          <div class="c-text">
+            <label>Email</label>
+            <a href="mailto:info@kaimosihotel.com">info@kaimosihotel.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="contact-actions">
+        <a href="tel:+254726526802" class="btn-primary">📞 Call Now</a>
+        <a href="https://wa.me/254726526802" target="_blank" class="btn-forest" style="background:#25D366; color:white;">💬 WhatsApp</a>
+        <a href="https://maps.google.com/?q=Shamakhokho+Vihiga+Kenya" target="_blank" class="btn-forest">🗺️ Get Directions</a>
+      </div>
+      <div class="social-links">
+        <a href="#" class="social-link" title="Instagram">📸</a>
+        <a href="#" class="social-link" title="Facebook">📘</a>
+        <a href="#" class="social-link" title="Twitter">🐦</a>
+        <a href="https://wa.me/254726526802" class="social-link" title="WhatsApp">💬</a>
+      </div>
+    </div>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7!2d34.835!3d0.075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa30000000001%3A0x1!2sKaimosi%2C+Vihiga+County!5e0!3m2!1sen!2ske!4v1"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo" style="text-decoration:none;">
+        <div class="nav-logo-icon">KV</div>
+        <div class="nav-logo-text">
+          <strong>Kaimosi Vert</strong>
+          <span>Hotel & Retreat</span>
+        </div>
+      </a>
+      <p>A luxury nature retreat near Kaimosi Forest in Shamakhokho, Vihiga County. Where tranquility, comfort, and authentic African hospitality converge.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="#rooms">Rooms & Suites</a></li>
+        <li><a href="#dining">Dining</a></li>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#reviews">Guest Reviews</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Stay</h5>
+      <ul>
+        <li><a href="#" onclick="openModal()">Book a Room</a></li>
+        <li><a href="#">Special Offers</a></li>
+        <li><a href="#">Corporate Stays</a></li>
+        <li><a href="#">Events & Retreats</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="tel:+254726526802">+254 726 526802</a></li>
+        <li><a href="mailto:info@kaimosihotel.com">info@kaimosihotel.com</a></li>
+        <li><a href="#">Shamakhokho, Vihiga</a></li>
+        <li><a href="#">Western Kenya</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Kaimosi Vert Hotel. All rights reserved.</p>
+    <p style="color:rgba(255,255,255,0.15);">Hotel in Vihiga · Shamakhokho Hotel · Kaimosi Accommodation</p>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/254726526802?text=Hello%2C%20I'd%20like%20to%20book%20a%20room%20at%20Kaimosi%20Vert%20Hotel" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+  💬
+</a>
+
+<!-- BOOKING MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOnOverlay(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <h3>Reserve Your Stay</h3>
+    <p>Complete your booking — simple, fast, secure. Our team will confirm within 1 hour.</p>
+    <div class="modal-form">
+      <div class="modal-row">
+        <div class="modal-field">
+          <label>First Name</label>
+          <input type="text" placeholder="Your name">
+        </div>
+        <div class="modal-field">
+          <label>Phone / WhatsApp</label>
+          <input type="tel" placeholder="+254 ...">
+        </div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-field">
+          <label>Check-In Date</label>
+          <input type="date" id="modal-checkin">
+        </div>
+        <div class="modal-field">
+          <label>Check-Out Date</label>
+          <input type="date" id="modal-checkout">
+        </div>
+      </div>
+      <div class="modal-row">
+        <div class="modal-field">
+          <label>Room Type</label>
+          <select>
+            <option>Forest View Suite</option>
+            <option>Deluxe Room</option>
+            <option>Executive Room</option>
+            <option>Family Room</option>
+            <option>Couple's Retreat</option>
+          </select>
+        </div>
+        <div class="modal-field">
+          <label>Number of Guests</label>
+          <select>
+            <option>1 Guest</option>
+            <option selected>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4+ Guests</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-field">
+        <label>Special Requests (optional)</label>
+        <input type="text" placeholder="Anniversary, dietary needs, early check-in...">
+      </div>
+      <button class="modal-submit" onclick="submitBooking()">Confirm Reservation →</button>
+    </div>
+    <p style="text-align:center; font-size:0.7rem; color:rgba(255,255,255,0.3); margin-top:1rem;">
+      Or call us directly: <a href="tel:+254726526802" style="color:var(--gold);">+254 726 526802</a>
+    </p>
+  </div>
+</div>
+
+<script>
+  // NAV scroll effect
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Mobile menu
+  function toggleMenu() {
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+
+  // Modal
+  function openModal() {
+    document.getElementById('modalOverlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal() {
+    document.getElementById('modalOverlay').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function closeModalOnOverlay(e) {
+    if (e.target === document.getElementById('modalOverlay')) closeModal();
+  }
+  function submitBooking() {
+    const checkin = document.getElementById('modal-checkin').value;
+    const checkout = document.getElementById('modal-checkout').value;
+    if (!checkin || !checkout) {
+      alert('Please select your check-in and check-out dates.');
+      return;
+    }
+    alert('✅ Booking request received! Our team will contact you within 1 hour to confirm your reservation.\n\nThank you for choosing Kaimosi Vert Hotel!');
+    closeModal();
+  }
+  function handleBooking() {
+    openModal();
+    const checkin = document.getElementById('checkin').value;
+    const checkout = document.getElementById('checkout').value;
+    if (checkin) document.getElementById('modal-checkin').value = checkin;
+    if (checkout) document.getElementById('modal-checkout').value = checkout;
+  }
+
+  // Escape key closes modal
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModal(); });
+
+  // Intersection Observer for fade-in
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Set default dates
+  window.addEventListener('load', () => {
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(today.getDate() + 1);
+    const fmt = d => d.toISOString().split('T')[0];
+    document.getElementById('checkin').value = fmt(today);
+    document.getElementById('checkout').value = fmt(tomorrow);
+    document.getElementById('modal-checkin').value = fmt(today);
+    document.getElementById('modal-checkout').value = fmt(tomorrow);
+  });
+</script>
+</body>
+</html>
